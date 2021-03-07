@@ -3,6 +3,8 @@ const net = require('net');
 const server = '192.168.100.11'; // 'localhost'
 const listeningPort = 55351;
 
+const messsages = process.argv.slice(2);
+
 // creating a custom socket client and connecting it....
 let client = new net.Socket();
 client.connect({
@@ -22,14 +24,16 @@ client.on('connect',
         console.log('Klijent osluškuje na portu: ' + port);
         console.log('IP adresa klijenta:' + ipaddr);
         console.log('Vrsta IP protokola za klijenta (IP4/IP6) : ' + family);
-        client.write('pozdrav\r\nod klijenta\r\n');
+        for (const mess of messsages) {
+            client.write(mess);
+        }
     });
 
 client.setEncoding('utf8');
 
 client.on('data',
     function(data) {
-        console.log('Podaci pristigli sa servera: ' + data);
+        console.log('Podaci pristigli sa servera: ' + data + ' ');
     });
 
 setTimeout(

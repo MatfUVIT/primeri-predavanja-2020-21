@@ -1,11 +1,13 @@
 const net = require('net');
 
+const server = '192.168.100.11'; // 'localhost'
 const listeningPort = 55351;
 
 // creating a custom socket client and connecting it....
 let client = new net.Socket();
 client.connect({
-    port: listeningPort
+    port: listeningPort,
+    host: server
 });
 
 client.on('connect',

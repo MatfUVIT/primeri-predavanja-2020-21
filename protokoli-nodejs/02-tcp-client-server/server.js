@@ -1,5 +1,10 @@
 const net = require('net');
 
+let greet = process.argv[2];
+if (!greet)
+    greet = "UVIT TCP";
+greet = '[' + greet + ']';
+
 let server = net.createServer();
 
 server.on('close',
@@ -55,9 +60,9 @@ server.on('connection',
                 console.log('Podaci poslati prema serveru: ' + data);
 
                 //echo data
-                let is_kernel_buffer_full = socket.write('[UVIT TCP]' + data + "[UVIT TCP]");
+                let is_kernel_buffer_full = socket.write(greet + data + greet);
                 if (is_kernel_buffer_full) {
-                    console.log('Podaci su uspešno prodleđeni iz bafera jezgra, tj. uspešno upisani!');
+                    console.log('Podaci su uspešno prosleđeni iz bafera jezgra, tj. uspešno upisani!');
                 } else {
                     socket.pause();
                 }
