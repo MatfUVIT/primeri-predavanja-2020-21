@@ -1,5 +1,5 @@
 const port = 33333;
-const host = '192.168.100.11'; //'127.0.0.1'
+const host = 'liss2.math.rs'; //'192.168.100.11'; //'127.0.0.1';
 
 let greet = process.argv[2];
 if (!greet)

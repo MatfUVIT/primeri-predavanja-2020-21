@@ -1,6 +1,6 @@
 const net = require('net');
 
-const server = '192.168.100.11'; // 'localhost'
+const server = 'liss2.math.rs'; //'192.168.100.11'; //'127.0.0.1';//'localhost';
 const listeningPort = 55351;
 
 const messsages = process.argv.slice(2);
