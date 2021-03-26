@@ -1,0 +1,12 @@
+<!DOCTYPE adresa [
+   <!ELEMENT addresa (ime,kompanija,telefon)>
+   <!ELEMENT ime (#PCDATA)>
+   <!ELEMENT kompanija (#PCDATA)>
+   <!ELEMENT telefon (#PCDATA)>
+]>
+
+<adresa>
+   <ime>Vladimir Filipovic</ime>
+   <kompanija>Matematički fakultet</kompanija>
+   <telefon>(011) 123-4567</telefon>
+</adresa>

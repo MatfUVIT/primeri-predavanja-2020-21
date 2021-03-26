@@ -1,0 +1,4 @@
+<!ELEMENT addresa (ime,kompanija,telefon)>
+<!ELEMENT ime (#PCDATA)>
+<!ELEMENT kompanija (#PCDATA)>
+<!ELEMENT telefon (#PCDATA)>
