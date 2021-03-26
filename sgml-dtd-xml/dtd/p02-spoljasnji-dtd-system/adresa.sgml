@@ -1,0 +1,7 @@
+<!DOCTYPE adresa SYSTEM "adresa.dtd">
+
+<adresa>
+   <ime>Vladimir Filipovic</ime>
+   <kompanija>Matematički fakultet</kompanija>
+   <telefon>(011) 123-4567</telefon>
+</adresa>
