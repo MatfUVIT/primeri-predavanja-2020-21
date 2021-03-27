@@ -1,0 +1,6 @@
+<!ELEMENT zbirka (pesma+)>
+<!ELEMENT pesma (naslov?, strofa+)>
+<!ATTLIST pesma autor CDATA #REQUIRED>
+<!ELEMENT naslov (#PCDATA)>
+<!ELEMENT strofa (stih+)>
+<!ELEMENT stih (#PCDATA)>

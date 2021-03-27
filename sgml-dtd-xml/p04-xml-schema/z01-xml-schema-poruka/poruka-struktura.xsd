@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://uvit.math.rs" xmlns="http://uvit.math.rs" elementFormDefault="qualified">
+  <xs:element name="poruka">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="prima" type="xs:string" />
+        <xs:element name="salje" type="xs:string" />
+        <xs:element name="naslov" type="xs:string" />
+        <xs:element name="tekst" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
