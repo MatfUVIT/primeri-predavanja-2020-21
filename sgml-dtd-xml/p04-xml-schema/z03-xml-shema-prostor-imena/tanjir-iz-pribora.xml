@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tanjir xmlns="http://uvit.math.rs/pzr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs/pzr pribor-za-rucavanje.xsd">
+
+    <precnik mera="cm">20</precnik>
+    <zapremina mera="l">0.4</zapremina>
+    <dekoracija>Mejsner</dekoracija>
+
+</tanjir>

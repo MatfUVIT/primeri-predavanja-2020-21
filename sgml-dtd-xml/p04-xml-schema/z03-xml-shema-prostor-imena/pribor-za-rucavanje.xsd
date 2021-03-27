@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://uvit.math.rs/pzr" xmlns="http://uvit.math.rs/pzr" elementFormDefault="qualified">
+    <xsd:element name="tanjir" type="TanjirType" />
+    <xsd:complexType name="TanjirType">
+        <xsd:sequence>
+            <xsd:element name="precnik" type="PrecnikType" />
+            <xsd:element name="zapremina" type="ZapreminaType" />
+            <xsd:element name="dekoracija" type="xsd:string" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="PrecnikType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:integer">
+                <xsd:attribute name="mera" type="xsd:string" use="required"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="ZapreminaType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:float">
+                <xsd:attribute name="mera" type="xsd:string" use="required" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+</xsd:schema>
