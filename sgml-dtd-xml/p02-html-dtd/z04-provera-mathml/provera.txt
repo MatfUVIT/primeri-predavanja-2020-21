@@ -1,0 +1,5 @@
+Validacija
+
+https://validator.w3.org/#validate_by_input+with_options
+
+Jasan prikaz se dobija pomocu pregledaca Mozzila Firefox.
