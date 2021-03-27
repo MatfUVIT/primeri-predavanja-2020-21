@@ -1,6 +1,7 @@
-<?xml version="1.0"?>
-<!DOCTYPE zbirka SYSTEM "zbirka-pesama.dtd">
-<zbirka>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zbirka xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs zbirka-pesama.xsd">
+
     <pesma autor="Čika Jova Zmaj">
         <naslov>Žaba čita novine </naslov>
         <strofa>
