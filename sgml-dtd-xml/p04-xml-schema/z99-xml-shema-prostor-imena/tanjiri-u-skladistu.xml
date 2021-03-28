@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<inventar xmlns="http://uvit.math.rs/skl"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs/skl skladiste.xsd">
+    <elemenat> bla, bla </elemenat>
+    <elemenat>
+        <tanjir>
+        bla, bla
+        </tanjir>
+    </elemenat>
+    <elemenat>
+        <st:tanjir xmlns:st="http://uvit.math.rs/sat">
+            <st:PrecnikType mera="m">1.25</st:PrecnikType>
+            <st:donja-frekfencija mera="Hz">200</st:donja-frekfencija>
+            <st:gornja-frekfencija mera="Hz"> 3200.5 </st:gornja-frekfencija>
+        </st:tanjir>
+    </elemenat>
+</inventar>
