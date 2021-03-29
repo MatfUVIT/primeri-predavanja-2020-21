@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OK 
+-->
+
+<poruka xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs poruka-struktura.xsd">
+  <prima>Sanja</prima>
+  <salje>Vlado</salje>
+  <naslov>Podsetnik</naslov>
+  <tekst>Kupi karte za utakmicu</tekst>
+</poruka>
