@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ovde nema problema, vrednost je podesena fiksno kao 42, pa se ne mora navoditi
+-->
+
+<redniBrojDrugeKomponente xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs z05-elemenat-podrazumevano-fiksno.xsd"></redniBrojDrugeKomponente>

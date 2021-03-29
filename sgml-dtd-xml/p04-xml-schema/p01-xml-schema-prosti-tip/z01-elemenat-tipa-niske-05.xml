@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ovde je problem sto elemenat tekstPoruke sadrzi drugi elemenat 
+
+  <tekstPoruke xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs z01-elemenat-tipa-niske.xsd">
+  <sadrzina>  
+    Kupi karte za utakmicu
+  </sadrzina>
+</tekstPoruke>
+-->

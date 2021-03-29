@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ovde nema problema, postavljena je podrazumevana vrednost, pa elemenat moze biti prazan
+-->
+
+<redniBrojPrveKomponente xmlns="http://uvit.math.rs"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs z05-elemenat-podrazumevano-fiksno.xsd" />

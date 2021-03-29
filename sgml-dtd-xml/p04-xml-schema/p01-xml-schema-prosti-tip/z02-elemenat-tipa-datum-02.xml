@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ovde je problem sto sadrzaj elementa nije datum  
+
+
+  <rodjen xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs z02-elemenat-tipa-datum.xsd">
+  Miki maus
+</rodjen>
+
+-->

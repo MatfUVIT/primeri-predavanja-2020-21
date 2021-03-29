@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zbirka xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs zbirka-pesama.xsd">
+
+    <pesma autor="Čika Jova Zmaj">
+        <naslov>Žaba čita novine</naslov>
+        <strofa>
+            <stih>Sedi žaba sama</stih>
+            <stih>na listu lokvanja.</stih>
+            <stih>od žarkoga sunca</stih>
+            <stih>štitom se zaklanja.</stih>
+        </strofa>
+        <strofa>
+            <stih>Da novine čita</stih>
+            <stih>to vam slika kaže,</stih>
+            <stih>al' ne mož' da nađe</stih>
+            <stih>što joj oči traže.</stih>
+        </strofa>
+        <strofa>
+            <stih>Znate već o čemu</stih>
+            <stih>žabe brigu vode:</stih>
+            <stih>hoće li se skoro</stih>
+            <stih>odseliti rode.</stih>
+        </strofa>
+    </pesma>
+    <pesma autor="Душан Радовић">
+        <naslov>Био једном један лав</naslov>
+        <strofa>
+            <stih>Био једном један лав</stih>
+            <stih>Какав лав? Страшан лав!</stih>
+            <stih>Нарогушен и љут сав</stih>
+            <stih>Страшно! Страшно!</stih>
+        </strofa>
+        <strofa>
+            <stih>Не питајте шта је јео</stih>
+            <stih>Тај је јео шта је хтео</stih>
+            <stih>Трамвај цео и облака један део</stih>
+            <stih>Страшно! Страшно!</stih>
+        </strofa>
+    </pesma>
+</zbirka>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Ovde nema problema, elemenat tekstPoruke je prazan
+-->
+
+<tekstPoruke xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs z01-elemenat-tipa-niske.xsd">
+</tekstPoruke>

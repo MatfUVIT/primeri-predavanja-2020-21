@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ovde nema problema, elemenat redniBroj sadrzi ceo broj
+-->
+
+<redniBroj xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs z04-elemenat-celobrojnog-tipa.xsd">
+  42
+</redniBroj>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<poruka xmlns="http://uvit.math.rs" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://uvit.math.rs z01-poruka-tipa-string.xsd">
-  Kupi karte za utakmicu
-</poruka>

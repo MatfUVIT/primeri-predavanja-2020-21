@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Ovde je problem sto je elemenat tipa datum i vreme, a sadrzaj elementa je datum 
+
+<rodjen xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs z03-elemenat-tipa-datum-vreme.xsd">
+  1968-06-17
+</rodjen>
+
+-->
