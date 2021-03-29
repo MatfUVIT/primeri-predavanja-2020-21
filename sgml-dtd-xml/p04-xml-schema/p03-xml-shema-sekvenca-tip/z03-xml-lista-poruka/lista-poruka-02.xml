@@ -12,8 +12,8 @@ xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
     <tekst>Kupi karte za utakmicu</tekst>
   </poruka>
   <poruka>
-    <prima>Vlado</prima>
     <salje>Sanja</salje>
+    <prima>Vlado</prima>
     <naslov></naslov>
     <tekst>Kupila :)</tekst>
   </poruka>
