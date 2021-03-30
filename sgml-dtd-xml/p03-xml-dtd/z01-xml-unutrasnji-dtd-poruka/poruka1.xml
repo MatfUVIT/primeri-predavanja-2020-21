@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<!DOCTYPE poruka [
-<!ELEMENT poruka (prima,salje,naslov,tekst)>
+<!DOCTYPE pismo [
+<!ELEMENT pismo (prima,salje,naslov,tekst)>
 <!ELEMENT prima (#PCDATA)>
 <!ELEMENT salje (#PCDATA)>
 <!ELEMENT naslov (#PCDATA)>
 <!ELEMENT tekst (#PCDATA)>
 ]>
-<poruka>
+<pismo>
   <prima>Sanja</prima>
   <salje>Vlado</salje>
   <naslov>Podsetnik</naslov>
   <tekst>Kupi karte za utakmicu</tekst>
-</poruka>
+</pismo>

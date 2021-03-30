@@ -1,4 +1,4 @@
-<!ELEMENT poruka (prima,salje,naslov,tekst)>
+<!ELEMENT pismo (prima,salje,naslov,tekst)>
 <!ELEMENT prima (#PCDATA)>
 <!ELEMENT salje (#PCDATA)>
 <!ELEMENT naslov (#PCDATA)>

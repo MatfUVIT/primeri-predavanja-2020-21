@@ -2,9 +2,7 @@
 <!-- OK - lista pismo moze da bude jednoclana
 -->
 
-<listaPoruka xmlns="http://uvit.math.rs" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
+<listaPoruka xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
   <pismo redniBroj="1">
     <prima>
       <ime>Владимир</ime>
@@ -13,7 +11,9 @@ xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
         <ulica>Студентски трг</ulica>
         <broj>12</broj>
         <grad>Београд</grad>
-        <drzava></drzava>
+        <drzava>Србија</drzava>
+        <gradPostanskiBroj>11000</gradPostanskiBroj>
+        <adresaPAK>123456</adresaPAK>
       </adresa>
       <datumRodjenja>
         1968-06-17
@@ -27,6 +27,8 @@ xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
         <broj></broj>
         <grad></grad>
         <drzava></drzava>
+        <gradPostanskiBroj></gradPostanskiBroj>
+        <adresaPAK></adresaPAK>
       </adresa>
       <datumRodjenja>2003-12-17</datumRodjenja>
     </salje>
@@ -41,11 +43,11 @@ xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
         <ulica>Студентски трг</ulica>
         <broj>12</broj>
         <grad>Београд</grad>
-        <drzava></drzava>
+        <drzava>Србија</drzava>
+        <gradPostanskiBroj>11000</gradPostanskiBroj>
+        <adresaPAK>123456</adresaPAK>
       </adresa>
-      <datumRodjenja>
-        1968-06-17
-      </datumRodjenja>
+      <datumRodjenja> 1968-06-17 </datumRodjenja>
     </salje>
     <prima>
       <ime>Софија</ime>
@@ -55,6 +57,8 @@ xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
         <broj></broj>
         <grad></grad>
         <drzava></drzava>
+        <gradPostanskiBroj></gradPostanskiBroj>
+        <adresaPAK></adresaPAK>
       </adresa>
       <datumRodjenja>2003-12-17</datumRodjenja>
     </prima>
