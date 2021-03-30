@@ -27,6 +27,7 @@
     <xsd:sequence>
       <xsd:element name="ulica" type="xsd:string" />
       <xsd:element name="broj" type="xsd:int" default="0" />
+      <xsd:element name="tacnaLokacija" type="xsd:string" />
       <xsd:element name="grad" type="xsd:string" default="N/A" />
       <xsd:element name="drzava" type="xsd:string" default="N/A" />
     </xsd:sequence>

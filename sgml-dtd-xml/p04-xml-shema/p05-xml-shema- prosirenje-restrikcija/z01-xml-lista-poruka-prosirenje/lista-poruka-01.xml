@@ -10,6 +10,7 @@
       <adresa>
         <ulica>Студентски трг</ulica>
         <broj>12</broj>
+        <tacnaLokacija></tacnaLokacija>
         <grad>Београд</grad>
         <drzava>Србија</drzava>
         <gradPostanskiBroj>11000</gradPostanskiBroj>
@@ -25,6 +26,7 @@
       <adresa>
         <ulica></ulica>
         <broj></broj>
+        <tacnaLokacija></tacnaLokacija>
         <grad></grad>
         <drzava></drzava>
         <gradPostanskiBroj></gradPostanskiBroj>
@@ -42,6 +44,7 @@
       <adresa>
         <ulica>Студентски трг</ulica>
         <broj>12</broj>
+        <tacnaLokacija></tacnaLokacija>
         <grad>Београд</grad>
         <drzava>Србија</drzava>
         <gradPostanskiBroj>11000</gradPostanskiBroj>
@@ -55,6 +58,7 @@
       <adresa>
         <ulica></ulica>
         <broj></broj>
+        <tacnaLokacija></tacnaLokacija>
         <grad></grad>
         <drzava></drzava>
         <gradPostanskiBroj></gradPostanskiBroj>

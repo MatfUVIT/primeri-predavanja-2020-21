@@ -2,9 +2,7 @@
 <!-- OK - lista pismo moze da bude jednoclana
 -->
 
-<listaPoruka xmlns="http://uvit.math.rs" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
+<listaPoruka xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
   <pismo redniBroj="1">
     <prima>
       <ime>Владимир</ime>
@@ -12,9 +10,7 @@ xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
       <adresa>
         <ulica>Студентски трг</ulica>
         <broj>12</broj>
-        <tacnaLokacija>кабинет 716, пети спрат</tacnaLokacija>
-        <grad>Београд</grad>
-        <drzava>Србија</drzava>
+        <tacnaLokacija></tacnaLokacija>
       </adresa>
       <datumRodjenja>
         1968-06-17
@@ -27,8 +23,6 @@ xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
         <ulica></ulica>
         <broj></broj>
         <tacnaLokacija></tacnaLokacija>
-        <grad></grad>
-        <drzava></drzava>
       </adresa>
       <datumRodjenja>2003-12-17</datumRodjenja>
     </salje>
@@ -42,13 +36,9 @@ xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
       <adresa>
         <ulica>Студентски трг</ulica>
         <broj>12</broj>
-        <tacnaLokacija>кабинет 716, пети спрат</tacnaLokacija>
-        <grad>Београд</grad>
-        <drzava></drzava>
+        <tacnaLokacija></tacnaLokacija>
       </adresa>
-      <datumRodjenja>
-        1968-06-17
-      </datumRodjenja>
+      <datumRodjenja> 1968-06-17 </datumRodjenja>
     </salje>
     <prima>
       <ime>Софија</ime>
@@ -57,8 +47,6 @@ xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
         <ulica></ulica>
         <broj></broj>
         <tacnaLokacija></tacnaLokacija>
-        <grad></grad>
-        <drzava></drzava>
       </adresa>
       <datumRodjenja>2003-12-17</datumRodjenja>
     </prima>

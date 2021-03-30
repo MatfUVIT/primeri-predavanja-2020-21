@@ -19,17 +19,38 @@
     <xsd:all>
       <xsd:element name="ime" type="xsd:string" />
       <xsd:element name="prezime" type="xsd:string" />
-      <xsd:element name="adresa" type="AdresaType" />
+      <xsd:element name="adresa" type="InternaSRBAdresaType" />
       <xsd:element name="datumRodjenja" type="xsd:date" />
     </xsd:all>
   </xsd:complexType>
   <xsd:complexType name="AdresaType">
-    <xsd:all>
+    <xsd:sequence>
       <xsd:element name="ulica" type="xsd:string" />
       <xsd:element name="broj" type="xsd:int" default="0" />
       <xsd:element name="tacnaLokacija" type="xsd:string" />
       <xsd:element name="grad" type="xsd:string" default="N/A" />
       <xsd:element name="drzava" type="xsd:string" default="N/A" />
-    </xsd:all>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SRBAdresaType">
+    <xsd:complexContent>
+      <xsd:extension base="AdresaType">
+        <xsd:sequence>
+          <xsd:element name="gradPostanskiBroj" type="xsd:int" default="0" />
+          <xsd:element name="adresaPAK" type="xsd:int" default="0"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="InternaSRBAdresaType">
+    <xsd:complexContent>
+      <xsd:restriction base="SRBAdresaType">
+        <xsd:sequence>
+          <xsd:element name="ulica" type="xsd:string" />
+          <xsd:element name="broj" type="xsd:int" default="0" />
+          <xsd:element name="tacnaLokacija" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
   </xsd:complexType>
 </xsd:schema>
