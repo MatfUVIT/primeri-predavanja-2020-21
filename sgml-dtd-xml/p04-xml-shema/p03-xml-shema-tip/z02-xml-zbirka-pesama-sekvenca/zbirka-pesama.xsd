@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://uvit.math.rs" xmlns="http://uvit.math.rs" 
+elementFormDefault="qualified">
+    <xsd:element name="zbirka" type="ZbirkaType" />
+    <xsd:complexType name="ZbirkaType">
+        <xsd:sequence>
+            <xsd:element name="pesma" type="PesmaType" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="PesmaType">
+        <xsd:sequence>
+            <xsd:element name="naslov" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="strofa" type="StrofaType" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="StrofaType">
+        <xsd:sequence>
+            <xsd:element name="stih" type="xsd:string" maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

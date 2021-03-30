@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OK - lista poruka moze da bude jednoclana
+-->
+
+<listaPoruka xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
+  <poruka redniBroj="1">
+    <prima>
+        <ime>Владимир</ime>
+        <prezime>Филиповић</prezime>
+        <adresa></adresa>
+        <datumRodjenja>
+        1968-06-17
+      </datumRodjenja>
+    </prima>
+    <salje>
+        <ime>Софија</ime>
+        <prezime>Филиповић</prezime>
+        <adresa></adresa>
+        <datumRodjenja>2003-12-17</datumRodjenja>
+    </salje>
+    <naslov>Подсетник</naslov>
+    <tekst>Купи карте за утакмицу.</tekst>
+  </poruka>
+  <poruka redniBroj="2">
+    <salje>
+      <ime>Владимир</ime>
+      <prezime>Филиповић</prezime>
+      <adresa></adresa>
+      <datumRodjenja>
+        1968-06-17
+      </datumRodjenja>
+    </salje>
+    <prima>
+      <ime>Софија</ime>
+      <prezime>Филиповић</prezime>
+      <adresa></adresa>
+      <datumRodjenja>2003-12-17</datumRodjenja>
+    </prima>
+    <naslov>Коју?</naslov>
+    <tekst>Коју утакмицу? Кошарка или одбојка?</tekst>
+  </poruka>
+</listaPoruka>
