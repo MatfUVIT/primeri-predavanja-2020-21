@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://uvit.math.rs" xmlns="http://uvit.math.rs" elementFormDefault="qualified">
+  <xsd:element name="odecaRaspolozivo" type="OdecaRaspolozivoType" />
+  <xsd:simpleType name="OdecaVelicinaOpisType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="extra-small" />
+      <xsd:enumeration value="small" />
+      <xsd:enumeration value="medium" />
+      <xsd:enumeration value="large" />
+      <xsd:enumeration value="extra-large" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="OdecaVelicineType">
+    <xsd:list itemType="OdecaVelicinaOpisType" />
+  </xsd:simpleType>
+  <xsd:complexType name="OdecaRaspolozivoType">
+    <xsd:sequence minOccurs="1" maxOccurs="unbounded">
+      <xsd:element name="naRaspolaganju">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="naziv" type="xsd:string" />
+            <xsd:element name="opis" type="xsd:string" />
+          </xsd:all>
+          <xsd:attribute name="velicine" type="OdecaVelicineType" />
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://uvit.math.rs/skl" xmlns="http://uvit.math.rs/skl" elementFormDefault="qualified">
-    <xsd:element name="inventar" type="InventarType" />
-    <xsd:complexType name="InventarType">
-        <xsd:sequence>
-            <xsd:element name="elemenat" type="xsd:anyType" maxOccurs="unbounded"/>
-        </xsd:sequence>
-    </xsd:complexType>
-</xsd:schema>

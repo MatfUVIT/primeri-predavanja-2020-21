@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<tanjir xmlns="http://uvit.math.rs/sat" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs/sat satelitska-oprema.xsd">
+<tanjir xmlns="http://uvit.math.rs/sat" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs/sat satelitska-oprema.xsd">
     <precnik mera="m">1.25</precnik>
     <donja-frekfencija mera="Hz">200</donja-frekfencija>
     <gornja-frekfencija mera="Hz"> 3200.5 </gornja-frekfencija>

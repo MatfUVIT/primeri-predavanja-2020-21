@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OK 
+-->
+
+<odecaRaspolozivo xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs odeca-zalihe-struktura.xsd">
+  <naRaspolaganju velicine="small">
+    <naziv>Jakna</naziv>
+    <opis>Stara kožna jakna</opis>
+  </naRaspolaganju>
+  <naRaspolaganju velicine="extra-large small large">
+    <naziv>Košulja</naziv>
+    <opis>Nova košulja</opis>
+  </naRaspolaganju>
+
+</odecaRaspolozivo>

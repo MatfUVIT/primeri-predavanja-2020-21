@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://uvit.math.rs" xmlns="http://uvit.math.rs" elementFormDefault="qualified">
+  <xsd:element name="listaPoruka" type="ListaPorukaType" />
+  <xsd:complexType name="ListaPorukaType">
+    <xsd:sequence>
+      <xsd:element name="pismo" type="PismoType" maxOccurs="unbounded" />
+    </xsd:sequence>
+    <xsd:attribute name="komunkacioniMedijum" type="KomunikacioniMedijumType" />
+  </xsd:complexType>
+  <xsd:simpleType name="KomunikacioniMedijumType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Paper" />
+      <xsd:enumeration value="eMail" />
+      <xsd:enumeration value="SMS" />
+      <xsd:enumeration value="Viber" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="PismoType">
+    <xsd:all>
+      <xsd:element name="prima" type="OsobaType" />
+      <xsd:element name="salje" type="OsobaType" />
+      <xsd:element name="naslov" type="NaslovType" />
+      <xsd:element name="tekst" type="xsd:string" />
+    </xsd:all>
+    <xsd:attribute name="redniBroj" type="RedniBrojType" />
+  </xsd:complexType>
+  <xsd:simpleType name="NaslovType">
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1" />
+      <xsd:maxLength value="255" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="RedniBrojType">
+    <xsd:restriction base="xsd:int">
+      <xsd:minInclusive value="1" />
+      <xsd:maxInclusive value="9999" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="OsobaType">
+    <xsd:all>
+      <xsd:element name="ime" type="xsd:string" />
+      <xsd:element name="prezime" type="xsd:string" />
+      <xsd:element name="adresa" type="InternaSRBAdresaType" />
+      <xsd:element name="datumRodjenja" type="xsd:date" />
+    </xsd:all>
+  </xsd:complexType>
+  <xsd:complexType name="AdresaType">
+    <xsd:sequence>
+      <xsd:element name="ulica" type="xsd:string" />
+      <xsd:element name="broj" type="xsd:int" default="0" />
+      <xsd:element name="tacnaLokacija" type="xsd:string" />
+      <xsd:element name="grad" type="xsd:string" default="N/A" />
+      <xsd:element name="drzava" type="xsd:string" default="N/A" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SRBAdresaType">
+    <xsd:complexContent>
+      <xsd:extension base="AdresaType">
+        <xsd:sequence>
+          <xsd:element name="gradPostanskiBroj" type="xsd:int" default="0" />
+          <xsd:element name="adresaPAK" type="xsd:int" default="0" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType name="InternaSRBAdresaType">
+    <xsd:complexContent>
+      <xsd:restriction base="SRBAdresaType">
+        <xsd:sequence>
+          <xsd:element name="ulica" type="xsd:string" />
+          <xsd:element name="broj" type="xsd:int" default="0" />
+          <xsd:element name="tacnaLokacija" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

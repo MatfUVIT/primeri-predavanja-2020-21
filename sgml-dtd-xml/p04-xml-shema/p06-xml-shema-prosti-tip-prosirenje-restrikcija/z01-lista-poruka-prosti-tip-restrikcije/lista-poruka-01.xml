@@ -2,7 +2,8 @@
 <!-- OK 
 -->
 
-<listaPoruka xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
+<listaPoruka xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd" 
+komunkacioniMedijum="eMail">
   <pismo redniBroj="1">
     <prima>
       <ime>Владимир</ime>
@@ -11,10 +12,6 @@
         <ulica>Студентски трг</ulica>
         <broj>12</broj>
         <tacnaLokacija></tacnaLokacija>
-        <grad>Београд</grad>
-        <drzava>Србија</drzava>
-        <gradPostanskiBroj>11000</gradPostanskiBroj>
-        <adresaPAK>123456</adresaPAK>
       </adresa>
       <datumRodjenja>
         1968-06-17
@@ -27,14 +24,10 @@
         <ulica></ulica>
         <broj></broj>
         <tacnaLokacija></tacnaLokacija>
-        <grad></grad>
-        <drzava></drzava>
-        <gradPostanskiBroj></gradPostanskiBroj>
-        <adresaPAK></adresaPAK>
       </adresa>
       <datumRodjenja>2003-12-17</datumRodjenja>
     </salje>
-    <naslov>Подсетник</naslov>
+    <naslov>По</naslov>
     <tekst>Купи карте за утакмицу.</tekst>
   </pismo>
   <pismo redniBroj="2">
@@ -45,10 +38,6 @@
         <ulica>Студентски трг</ulica>
         <broj>12</broj>
         <tacnaLokacija></tacnaLokacija>
-        <grad>Београд</grad>
-        <drzava>Србија</drzava>
-        <gradPostanskiBroj>11000</gradPostanskiBroj>
-        <adresaPAK>123456</adresaPAK>
       </adresa>
       <datumRodjenja> 1968-06-17 </datumRodjenja>
     </salje>
@@ -59,10 +48,6 @@
         <ulica></ulica>
         <broj></broj>
         <tacnaLokacija></tacnaLokacija>
-        <grad></grad>
-        <drzava></drzava>
-        <gradPostanskiBroj></gradPostanskiBroj>
-        <adresaPAK></adresaPAK>
       </adresa>
       <datumRodjenja>2003-12-17</datumRodjenja>
     </prima>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://uvit.math.rs" xmlns="http://uvit.math.rs" elementFormDefault="qualified">
+  <xsd:element name="odeca" type="OdecaType" />
+  <xsd:simpleType name="OdecaVelicinaBrojType">
+    <xsd:restriction base="xsd:positiveInteger">
+      <xsd:maxInclusive value="21" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="OdecaVelicinaOpisType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="extra-small" />
+      <xsd:enumeration value="small" />
+      <xsd:enumeration value="medium" />
+      <xsd:enumeration value="large" />
+      <xsd:enumeration value="extra-large" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="OdecaVelicinaType">
+    <xsd:union memberTypes="OdecaVelicinaBrojType OdecaVelicinaOpisType" />
+  </xsd:simpleType>
+  <xsd:complexType name="OdecaType">
+    <xsd:all>
+      <xsd:element name="naziv" type="xsd:string" />
+      <xsd:element name="opis" type="xsd:string" />
+    </xsd:all>
+    <xsd:attribute name="velicina" type="OdecaVelicinaType" />
+  </xsd:complexType>
+</xsd:schema>

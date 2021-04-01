@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OK 
+-->
+
+<odeca xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs odeca-struktura.xsd" velicina="extra-small">
+  <naziv>Jakna</naziv>
+  <opis>Stara kožna jakna, kupljena u Turskoj</opis>
+
+</odeca>

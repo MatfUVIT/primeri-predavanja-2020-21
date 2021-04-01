@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://uvit.math.rs/zajednicko" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:complexType name="AdresaType">
+        <xs:sequence>
+            <xs:element name="Line1" type="xs:string" />
+            <xs:element name="Line2" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="CenaType">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MetodPlacanjaType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="VISA" />
+            <xs:enumeration value="MasterCard" />
+            <xs:enumeration value="Cash" />
+            <xs:enumeration value="AMEX" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

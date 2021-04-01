@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://uvit.math.rs/skl" 
+xmlns="http://uvit.math.rs/skl" 
+xmlns:sat="http://uvit.math.rs/sat" 
+xmlns:pzr="http://uvit.math.rs/pzr"
+elementFormDefault="qualified">
+
+    <xsd:import schemaLocation="satelitska-oprema.xsd" namespace="http://uvit.math.rs/sat" />
+    <xsd:import schemaLocation="pribor-za-rucavanje.xsd" namespace="http://uvit.math.rs/pzr" />
+    <xsd:element name="inventar" type="InventarType" />
+    <xsd:complexType name="InventarType">
+        <xsd:sequence>
+            <xsd:element name="elemenat" maxOccurs="unbounded">
+                <xsd:complexType>
+                    <xsd:choice>
+                        <xsd:element name="tanjir" type="sat:SatTanjirType" />
+                        <xsd:element name="tanjir" type="pzr:PzrTanjirType" />
+                    </xsd:choice>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
