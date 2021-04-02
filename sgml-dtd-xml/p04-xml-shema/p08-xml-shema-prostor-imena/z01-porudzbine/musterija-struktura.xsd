@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:cmn="http://uvit.math.rs/zajednicko" 
+<xsd:schema xmlns:zaj="http://uvit.math.rs/zajednicko" 
 targetNamespace="http://uvit.math.rs/musterija" 
-xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
 elementFormDefault="qualified">
-    <xs:import schemaLocation="zajednicko-struktura.xsd" namespace="http://uvit.math.rs/zajednicko" />
-    <xs:complexType name="MusterijaType">
-        <xs:sequence>
-            <xs:element name="Name" type="xs:string" />
-            <xs:element name="DeliveryAddress" type="cmn:AdresaType" />
-            <xs:element name="BillingAddress" type="cmn:AdresaType" />
-        </xs:sequence>
-    </xs:complexType>
-</xs:schema>
+    <xsd:import schemaLocation="zajednicko-struktura.xsd" 
+    namespace="http://uvit.math.rs/zajednicko" />
+    <xsd:complexType name="MusterijaType">
+        <xsd:sequence>
+            <xsd:element name="naziv" type="xsd:string" />
+            <xsd:element name="adresaZaIsporuku" type="zaj:AdresaType" />
+            <xsd:element name="adresaZaPlacanje" type="zaj:AdresaType" />
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

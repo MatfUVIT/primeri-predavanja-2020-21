@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:ord="http://uvit.math.rs/porudzbina" 
+xmlns:kup="http://uvit.math.rs/kupovina" 
+xmlns:zaj="http://uvit.math.rs/zajednicko" 
+xmlns:mus="http://uvit.math.rs/musterija" 
+targetNamespace="http://uvit.math.rs/kupovina" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xsd:import schemaLocation="zajednicko-struktura.xsd" 
+    namespace="http://uvit.math.rs/zajednicko" />
+    <xsd:import schemaLocation="musterija-struktura.xsd" 
+    namespace="http://uvit.math.rs/musterija" />
+    <xsd:import schemaLocation="porudzbina-struktura.xsd" 
+    namespace="http://uvit.math.rs/porudzbina" />
+    <xsd:element name="kupovina">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="porudzbina" type="ord:PorudzbinaType" />
+                <xsd:element name="metodPlacanja" type="zaj:MetodPlacanjaType" />
+                <xsd:element ref="kup:musterija" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="musterija" type="mus:MusterijaType" />
+</xsd:schema>
