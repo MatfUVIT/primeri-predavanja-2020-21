@@ -2,8 +2,8 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
 targetNamespace="http://uvit.math.rs" xmlns="http://uvit.math.rs" 
 elementFormDefault="qualified">
-  <xsd:element name="pismo" type="PorukaType" />
-  <xsd:complexType name="PorukaType">
+  <xsd:element name="pismo" type="PismoType" />
+  <xsd:complexType name="PismoType">
     <xsd:sequence>
       <xsd:element name="prima" type="xsd:string" />
       <xsd:element name="salje" type="xsd:string" />

@@ -2,7 +2,9 @@
 <!-- ovde je sve Ok, iako se redosled ne poklapa sa redosledom elemenata u shemi 
 -->
 
-<pismo xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs poruka-struktura.xsd">
+<pismo xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs poruka-struktura.xsd">
   <prima>Sanja</prima>
   <naslov>Podsetnik</naslov>
   <tekst>Kupi karte za utakmicu</tekst>

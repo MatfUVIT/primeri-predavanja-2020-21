@@ -2,7 +2,9 @@
 <!-- OK 
 -->
 
-<listaPoruka xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
+<listaPoruka xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
   <pismo redniBroj="1">
     <prima>
       <ime>Владимир</ime>

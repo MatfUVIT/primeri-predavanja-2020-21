@@ -2,9 +2,11 @@
 <!-- OK 
 -->
 
-<listaPoruka xmlns="http://uvit.math.rs" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd" 
-komunkacioniMedijum="eMail">
-  <pismo redniBroj="1">
+<listaPoruka xmlns="http://uvit.math.rs" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd" 
+komunkacioniMedijum="Viber">
+  <pismo redniBroj="1000">
     <prima>
       <ime>Владимир</ime>
       <prezime>Филиповић</prezime>

@@ -4,7 +4,7 @@
 
 <listaPoruka xmlns="http://uvit.math.rs" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
+xsi:schemaLocation="http://uvit.math.rs lista-pisama-struktura.xsd">
   <pismo redniBroj="1">
     <prima>
       <ime>Владимир</ime>
@@ -27,8 +27,8 @@ xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
         <ulica></ulica>
         <broj></broj>
         <tacnaLokacija></tacnaLokacija>
+        <drzava />
         <grad></grad>
-        <drzava></drzava>
       </adresa>
       <datumRodjenja>2003-12-17</datumRodjenja>
     </salje>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:cmn="http://uvit.math.rs/zajednicko" targetNamespace="http://uvit.math.rs/porudzbina" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:schema xmlns:cmn="http://uvit.math.rs/zajednicko" 
+targetNamespace="http://uvit.math.rs/porudzbina" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
     <xs:import schemaLocation="zajednicko-struktura.xsd" namespace="http://uvit.math.rs/zajednicko" />
     <xs:complexType name="PorudzbinaType">
         <xs:sequence>

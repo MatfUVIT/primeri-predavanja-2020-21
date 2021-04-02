@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ovo nije OK, kad se koristi choice radi se o iyboru jednog
 
+
 <pismo xmlns="http://uvit.math.rs" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://uvit.math.rs poruka-struktura.xsd">

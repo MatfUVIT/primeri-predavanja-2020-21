@@ -5,5 +5,4 @@
 
 <tekstPoruke xmlns="http://uvit.math.rs" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://uvit.math.rs z01-elemenat-tipa-niske.xsd">
-</tekstPoruke>
+xsi:schemaLocation="http://uvit.math.rs z01-elemenat-tipa-niske.xsd"/>

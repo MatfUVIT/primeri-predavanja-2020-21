@@ -2,13 +2,20 @@
 <!-- OK - lista pismo moze da bude jednoclana
 -->
 
-<listaPoruka xmlns="http://uvit.math.rs" 
+<listaPisama xmlns="http://uvit.math.rs" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://uvit.math.rs lista-poruka-struktura.xsd">
+xsi:schemaLocation="http://uvit.math.rs lista-pisama-struktura.xsd">
   <pismo>
     <prima>Sanja</prima>
     <salje>Vlado</salje>
     <naslov>Podsetnik</naslov>
     <tekst>Kupi karte za utakmicu</tekst>
   </pismo>
-</listaPoruka>
+  <pismo>
+    <salje>Sanja</salje>
+    <prima>Vlado</prima>
+    <naslov></naslov>
+    <tekst>Kupila :)</tekst>
+  </pismo>
+
+</listaPisama>

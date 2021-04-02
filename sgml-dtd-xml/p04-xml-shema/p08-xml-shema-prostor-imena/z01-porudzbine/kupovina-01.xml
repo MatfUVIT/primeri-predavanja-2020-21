@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <p:kupovina xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://uvit.math.rs/kupovina centralno-struktura.xsd" xmlns:p="http://uvit.math.rs/kupovina" xmlns:o="http://uvit.math.rs/porudzbina" xmlns:c="http://uvit.math.rs/musterija" xmlns:cmn="http://uvit.math.rs/zajednicko">
+xsi:schemaLocation="http://uvit.math.rs/kupovina centralno-struktura.xsd" 
+xmlns:p="http://uvit.math.rs/kupovina" 
+xmlns:o="http://uvit.math.rs/porudzbina" 
+xmlns:c="http://uvit.math.rs/musterija" 
+xmlns:cmn="http://uvit.math.rs/zajednicko">
     <p:OrderDetail>
         <o:Item>
             <o:ProductName>Widget</o:ProductName>
