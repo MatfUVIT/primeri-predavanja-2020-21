@@ -18,7 +18,7 @@ console.log(z);
 console.log('---');
 x = 0;
 
-y = x ? 'nije nula': 'nula';
+y = x ? 'nije nula' : 'nula';
 console.log(y);
 
 z = 'Miki' + x;
@@ -27,7 +27,7 @@ console.log(z);
 console.log('---');
 x = 11;
 
-y = x ? 'nije nula': 'nula';
+y = x ? 'nije nula' : 'nula';
 console.log(y);
 
 z = 'Miki' + x;

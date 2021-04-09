@@ -1,5 +1,6 @@
 function kvadrat(x) {
-    return x * x;
+    let y = x * x;
+    return y;
 };
 
 console.log(`Kвадрат броја 12 је ${kvadrat(12)}`);
@@ -8,7 +9,7 @@ console.log(`Kвадрат броја 10.5 је ${y}`);
 y = 14;
 console.log(`Kвадрат броја ${y} је ${kvadrat(y)}`);
 y = '2.5';
-console.log(`Kвадрат ниске '${y}' је ${kvadrat(y)}`);
+console.log(`Kвадрат нисnodeке '${y}' је ${kvadrat(y)}`);
 y = '2';
 console.log(`Kвадрат ниске '${y}' је ${kvadrat(y)}`);
 y = 'miki';

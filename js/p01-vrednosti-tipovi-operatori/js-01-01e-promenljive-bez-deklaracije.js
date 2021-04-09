@@ -1,3 +1,3 @@
-//'use strict'
-osoba2 = "Никола"
-console.log(osoba2)
+//'use strict';
+osoba2 = "Никола";
+console.log(osoba2);

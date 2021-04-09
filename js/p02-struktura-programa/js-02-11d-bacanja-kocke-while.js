@@ -1,4 +1,4 @@
-const ukupnoBacanjaUEksperimentu = 300;
+const ukupnoBacanjaUEksperimentu = 30000;
 
 let i = 0;
 let kockaJePalaNa = undefined;
