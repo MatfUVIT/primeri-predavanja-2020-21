@@ -1,4 +1,4 @@
-let kvadrat = function (x) {
+let kvadrat = function(x) {
     return x * x;
 };
 
@@ -17,4 +17,3 @@ y = true;
 console.log(`Kвадрат од ${y} је ${kvadrat(y)}`);
 y = false;
 console.log(`Kвадрат од ${y} је ${kvadrat(y)}`);
-

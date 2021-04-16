@@ -12,13 +12,13 @@ console.log(obj.ime);
 console.log(obj.duzina);
 
 console.log(obj['ime']);
-console.log(obj[ String.fromCharCode(105) + 'me']);
+console.log(obj[String.fromCharCode(105) + 'me']);
 
 console.log(obj.prezime);
 obj.prezime = 'Maus';
 console.log(obj.prezime);
 console.log(obj);
-let s =obj.toString();
+let s = obj.toString();
 console.log(s);
 
 let obj2 = {
@@ -27,4 +27,5 @@ let obj2 = {
 obj2.unutra = obj;
 console.log(obj2);
 
-
+obj.prezime = 'Patak';
+console.log(obj2);

@@ -1,7 +1,7 @@
 const uvecajBrojac = () => {
     let brojac = 0;
     return () => brojac++;
-}
+};
 
 const izbroj1 = uvecajBrojac();
 

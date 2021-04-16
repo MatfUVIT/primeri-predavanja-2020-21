@@ -1,11 +1,11 @@
-// const stepenovanje1 = function (izlozilac = 2) {
-//     return function (osnova = 10) {
+// const stepenovanje1 = function(izlozilac = 2) {
+//     return function(osnova = 10) {
 //         let ret = 1;
 //         for (let i = 0; i < izlozilac; i++)
 //             ret *= osnova;
 //         return ret;
 //     };
-// }
+// };
 // const kvadriranje1 = stepenovanje1(2);
 // console.log(kvadriranje1(4.5));
 // console.log(kvadriranje1(10));
@@ -21,7 +21,7 @@ const stepenovanje = (izlozilac = 2) =>
         for (let i = 0; i < izlozilac; i++)
             ret *= osnova;
         return ret;
-    }
+    };
 const kvadriranje = stepenovanje(2);
 console.log(kvadriranje(4.5));
 console.log(kvadriranje(10));

@@ -1,6 +1,7 @@
-let izgovara = function (tekst) {
+let izgovara = function(tekst) {
     console.log(`${this.tip} зец каже '${tekst}'`);
 }
+
 let beliZec = { tip: "бели", govor: izgovara };
 let debeliZec = { tip: "дебели", govor: izgovara };
 

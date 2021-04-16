@@ -1,6 +1,6 @@
 console.log('---')
-const izgradiIzraz1 = function (cilj) {
-    const izgradi1 = function (start, istorija) {
+const izgradiIzraz1 = function(cilj) {
+    const izgradi1 = function(start, istorija) {
         if (start == cilj)
             return istorija;
         else if (start > cilj)
@@ -15,9 +15,10 @@ const izgradiIzraz1 = function (cilj) {
     return izgradi1(1, "1");
 }
 
-for (let i = 80; i <= 100; i++)
+for (let i = 30; i <= 100; i++)
     console.log(i + " = " + izgradiIzraz1(i));
 
+/*
 console.log('---')
 // sazetija verzija - ista funkcionalnost
 const izgradiIzraz = function (cilj) {
@@ -34,3 +35,5 @@ const izgradiIzraz = function (cilj) {
 
 for (let i = 80; i <= 100; i++)
     console.log(i + " = " + izgradiIzraz(i));
+
+    */

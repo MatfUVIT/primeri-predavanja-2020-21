@@ -1,14 +1,15 @@
-let rabbit = {};
-rabbit.name = "Душко Дугоушко";
-rabbit.speak = function(tekst) {
+let zec = {};
+zec.ime = "Душко Дугоушко";
+zec.kaze = function(tekst) {
     console.log("Зека каже: '" + tekst + "'");
 };
 
-console.log(rabbit.name);
+console.log(zec.ime);
 
-rabbit.speak("Који ти је враг, шефе?");
+zec.kaze("Који ти је враг, шефе?");
 
-let x = rabbit.name;
-rabbit.name = rabbit.speak;
-rabbit.speak = x;
-rabbit.name("Проба! 1,2,3...");
+let x = zec.ime;
+zec.ime = zec.kaze;
+zec.kaze = x;
+zec.ime("Проба! 1,2,3...");
+console.log(zec.kaze);

@@ -1,5 +1,5 @@
 const ukupnoEksperimenata = 10;
-const ukupnoBacanjaUEksperimentu = 50;
+const ukupnoBacanjaUEksperimentu = 5000;
 
 for (let eksp = 0; eksp < ukupnoEksperimenata; eksp++) {
     var brojPojaveBroja1 = 0;
@@ -12,7 +12,7 @@ for (let eksp = 0; eksp < ukupnoEksperimenata; eksp++) {
         let kockaJePalaNa = Math.ceil(Math.random() * 6);
         //console.log(kockaJePalaNa);
         sracunajStatistikuBocniEfekat(kockaJePalaNa);
-    }    
+    }
     console.log(`Statistika eksperimenta broj ${eksp+1}, sa ${ukupnoBacanjaUEksperimentu} bacanja u eksperimentu:`);
     console.log(brojPojaveBroja1, brojPojaveBroja2, brojPojaveBroja3, brojPojaveBroja4, brojPojaveBroja5, brojPojaveBroja6);
 }

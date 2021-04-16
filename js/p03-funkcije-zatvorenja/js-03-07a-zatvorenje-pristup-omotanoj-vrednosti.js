@@ -1,6 +1,6 @@
-const uvecajBrojac = function () {
+const uvecajBrojac = function() {
     let brojac = 0;
-    return function () {
+    return function() {
         return brojac++;
     };
 }
@@ -18,6 +18,3 @@ console.log(2, izbroj2());
 console.log(2, izbroj2());
 console.log(2, izbroj2());
 console.log(2, izbroj2());
-
-
-

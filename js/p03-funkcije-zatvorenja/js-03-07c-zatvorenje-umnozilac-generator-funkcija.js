@@ -1,9 +1,9 @@
 // primer zatvorenja
-const umnozilac = function (faktor) {
-    return function (broj) {
+const umnozilac = function(faktor) {
+    return function(broj) {
         return broj * faktor;
     };
-}
+};
 
 const dupliraj = umnozilac(2);
 console.log(dupliraj(4.5));
