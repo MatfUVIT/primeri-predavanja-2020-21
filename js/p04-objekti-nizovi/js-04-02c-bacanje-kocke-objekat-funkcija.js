@@ -1,10 +1,10 @@
 'use strict'
+
 const ukupnoEksperimenata = 15;
 const ukupnoBacanjaUEksperimentu = 100;
 
 for (let eksp = 0; eksp < ukupnoEksperimenata; eksp++) {
-    let statistika =
-    {
+    let statistika = {
         broj1: 0,
         broj2: 0,
         broj3: 0,
@@ -51,7 +51,11 @@ function azurirajStatistiku(ishod, statistika) {
             console.log("OVO NE BI SMELO DA SE DESI !!!");
     }
     return {
-        broj1: br1, broj2: br2, broj3: br3,
-        broj4: br4, broj5: br5, broj6: br6
+        broj1: br1,
+        broj2: br2,
+        broj3: br3,
+        broj4: br4,
+        broj5: br5,
+        broj6: br6
     };
 }

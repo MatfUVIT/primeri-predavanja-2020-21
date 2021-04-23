@@ -17,6 +17,7 @@ podsetiMe("priprema slajdova za predavanja");
 podsetiMe("priprema zadataka");
 hitnoMePodseti("odgovoriti na pisma");
 podsetiMe("kupovina knjige");
+podsetiMe(() => console.log("Odmor"));
 
 while (podsetnik.length != 0) {
     console.log(staJeSledece());

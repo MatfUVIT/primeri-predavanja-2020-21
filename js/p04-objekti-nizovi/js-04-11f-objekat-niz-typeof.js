@@ -11,6 +11,10 @@ console.log(`${x} - ${typeof (x)}`);
 x = {};
 console.log(`${x} - ${typeof (x)}`);
 
+// niz
+x = [1, 2, 3];
+console.log(`${x} - ${typeof (x)}`);
+
 // funkcija 
 x = function() {
     console.log("Sreca, sreca, radost")
@@ -19,10 +23,6 @@ console.log(`${x} - ${typeof (x)}`);
 
 // lambda izraz 
 x = () => console.log("Sreca, sreca, radost");
-console.log(`${x} - ${typeof (x)}`);
-
-// niz
-x = [1, 2, 3];
 console.log(`${x} - ${typeof (x)}`);
 
 x = 1;

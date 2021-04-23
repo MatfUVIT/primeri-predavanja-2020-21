@@ -11,4 +11,5 @@ function brojačArgumenata() {
 brojačArgumenata('Ako kaniš ', 'pobijediti', ' ne smiješ ', 'izgubiti');
 brojačArgumenata('Ako kaniš pobijediti', ' ne smiješ izgubiti');
 brojačArgumenata('Ako kaniš pobijediti ne smiješ izgubiti');
+brojačArgumenata(() => "Danas nam je divan dan.");
 brojačArgumenata();

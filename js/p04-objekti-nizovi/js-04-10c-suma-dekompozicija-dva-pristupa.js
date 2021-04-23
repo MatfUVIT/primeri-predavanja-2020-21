@@ -1,15 +1,29 @@
-console.log('---');
 // monolitan pristup
-let total = 0,
-    count = 1;
-while (count <= 10) {
-    total += count;
-    count += 1;
+console.log('---');
+let total = 0;
+let current = 1;
+while (current <= 10) {
+    total += current;
+    current++;
 }
-console.log(total);
+
+// funkcionalan pristup
+console.log('---');
+const saberi = function(start, end) {
+    let total = 0;
+    let current = start;
+    while (current <= end) {
+        total += current;
+        current++;
+    }
+    return total;
+}
+let total2 = saberi(1, 10);
+console.log(total2);
 // prikazuje 55
 
 console.log('---');
+
 // funkcionalna dekompozicija problema
 function opseg(start, end) {
     let niz = [];
@@ -24,8 +38,8 @@ function suma(niz) {
         suma += niz[i];
     return suma;
 }
-
-console.log(suma(opseg(1, 10)));
+let total3 = suma(opseg(1, 10));
+console.log(total3);
 // prikazuje 55
 
 

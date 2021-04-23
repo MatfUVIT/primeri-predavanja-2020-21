@@ -1,7 +1,12 @@
+const prikaziStrukturu = function(obj) {
+    for (let deo in obj)
+        console.log(`${deo} - ${obj[deo]}`);
+};
+
 let tacka1 = {
     x: 1.3,
     y: 2.8,
-    pojaviSe: function () {
+    pojaviSe: function() {
         console.log(`ja sam tacka (${this.x},${this.y})`);
     }
 };
@@ -9,13 +14,17 @@ let tacka1 = {
 
 console.log('---');
 tacka1.pojaviSe();
+prikaziStrukturu(tacka1);
+
 
 console.log('---');
-for (let deo in tacka1)
-    console.log(`${deo} - ${tacka1[deo]}`);
+tacka1.x = 7.42;
+prikaziStrukturu(tacka1);
+
+console.log('---');
+tacka1.z = 0;
+prikaziStrukturu(tacka1);
 
 console.log('---');
 delete tacka1.x;
-for (let deo in tacka1)
-    console.log(`${deo} - ${tacka1[deo]}`);
-
+prikaziStrukturu(tacka1);
