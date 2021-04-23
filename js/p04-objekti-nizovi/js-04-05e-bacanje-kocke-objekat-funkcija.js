@@ -2,8 +2,7 @@ const ukupnoEksperimenata = 15;
 const ukupnoBacanjaUEksperimentu = 100;
 
 for (let eksp = 0; eksp < ukupnoEksperimenata; eksp++) {
-    let statistika =
-    {
+    let statistika = {
         broj1: 0,
         broj2: 0,
         broj3: 0,
@@ -14,7 +13,7 @@ for (let eksp = 0; eksp < ukupnoEksperimenata; eksp++) {
     for (let i = 0; i < ukupnoBacanjaUEksperimentu; i++) {
         let kockajePalaNa = Math.floor(Math.random() * 6 + 1);
         //console.log(rezultatBacanja);
-        statisitka = azurirajStatistiku(kockajePalaNa, statistika);
+        statistika = azurirajStatistiku(kockajePalaNa, statistika);
     }
     console.log(`Statistika eksperimenta br. ${eksp + 1}, sa ${ukupnoBacanjaUEksperimentu} bacanja:`);
     console.log(statistika);

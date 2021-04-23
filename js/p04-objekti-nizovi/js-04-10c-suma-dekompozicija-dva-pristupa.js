@@ -1,6 +1,7 @@
 console.log('---');
 // monolitan pristup
-let total = 0, count = 1;
+let total = 0,
+    count = 1;
 while (count <= 10) {
     total += count;
     count += 1;
@@ -27,3 +28,6 @@ function suma(niz) {
 console.log(suma(opseg(1, 10)));
 // prikazuje 55
 
+
+// Ovo nije dobro!
+//console.log(suma(opseg(10, 1)));

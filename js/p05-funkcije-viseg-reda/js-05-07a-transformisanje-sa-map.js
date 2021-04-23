@@ -1,19 +1,18 @@
-
-const filter = function (niz, uslov) {
+const filter = function(niz, uslov) {
     let ispuniliUslov = [];
     for (let i = 0; i < niz.length; i++) {
         if (uslov(niz[i]))
             ispuniliUslov.push(niz[i]);
     }
     return ispuniliUslov;
-}
+};
 
-const map = function (niz, tarnsformacija) {
+const map = function(niz, tarnsformacija) {
     let mapirano = [];
     for (let i = 0; i < niz.length; i++)
         mapirano.push(tarnsformacija(niz[i]));
     return mapirano;
-}
+};
 
 let opis = `[{"name":"Emma de Milliano","sex":"f","born":1876,"died":1956,"father":"Petrus de Milliano","mother":"Sophia van Damme"},
     {"name": "Maria de Rycke", "sex": "f", "born": 1683, "died": 1724, "father": "Frederik de Rycke", "mother": "Laurentia van Vlaenderen"},
@@ -45,16 +44,20 @@ let opis = `[{"name":"Emma de Milliano","sex":"f","born":1876,"died":1956,"fathe
 
 let family = JSON.parse(opis);
 
+// transformisanje svih pomoću map
+console.log('---');
+console.log(map(family, x => x.name + " " + (x.died - x.born)));
+
 // filtriranje tako da se zadrže samo stariji od 90
 console.log('---');
-let starijiOd90 = filter(family, function (person) {
+let starijiOd90 = filter(family, function(person) {
     return person.died - person.born > 90;
 });
 console.log(starijiOd90);
 
 // transformisanje starijih od 90 pomoću map
 console.log('---');
-console.log(map(starijiOd90, function (person) {
+console.log(map(starijiOd90, function(person) {
     return person.name + " " + (person.died - person.born);
 }));
 
@@ -72,6 +75,6 @@ console.log(map(starijiOd70, person => person.name + " " + (person.died - person
 console.log('---');
 console.log(
     family
-        .filter(x => x.died - x.born > 70)
-        .map(x => x.name + " " + (x.died - x.born)));
-
+    .filter(x => x.died - x.born > 70)
+    .filter(x => x.sex == 'm')
+    .map(x => x.name + " " + (x.died - x.born)));

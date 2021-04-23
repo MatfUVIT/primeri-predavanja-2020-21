@@ -18,4 +18,22 @@ console.log(nizBrojeva.lenght);
 // pokusaj pristupa osobini koja ne postoji
 console.log(nizBrojeva.duzina);
 
+console.log(nizBrojeva[1]);
+console.log(nizBrojeva[1 - 1]);
 
+console.log(nizBrojeva[17 - 1]);
+console.log(nizBrojeva[-1]);
+
+console.log(nizBrojeva[1.5]);
+
+console.log(nizBrojeva[false]);
+
+console.log(nizBrojeva[true]);
+
+console.log(nizBrojeva['Miki']);
+
+nizBrojeva[42] = 17;
+
+console.log(nizBrojeva[42]);
+
+console.log(nizBrojeva);

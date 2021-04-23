@@ -1,5 +1,8 @@
 let opis = '{"name":"Miki Maus","born":1980, "father":"Volt Dizni"}';
 
+let miki = JSON.parse(opis);
+console.log(miki);
+
 opis = `
 {
     "version": "0.2.0",

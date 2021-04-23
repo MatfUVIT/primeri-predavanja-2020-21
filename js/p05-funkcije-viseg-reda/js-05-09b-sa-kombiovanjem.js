@@ -32,22 +32,22 @@ let opis =
 
 let pretci = JSON.parse(opis);
 
-const prosek = function (niz) {
+const prosek = function(niz) {
     function plus(a, b) {
         return a + b;
     }
     return niz.reduce(plus) / niz.length;
 };
 
-const uzrast = function (p) {
+const duzinaZivota = function(p) {
     return p.died - p.born;
 };
 
-const jeMusko = function (p) {
+const jeMusko = function(p) {
     return p.sex == "m";
 };
 
-const jeZensko = function (p) {
+const jeZensko = function(p) {
     return p.sex == "f";
 }
 
@@ -55,10 +55,10 @@ console.log(
     prosek(pretci
         .filter(jeMusko)
         .filter(x => x.born >= 1800 && x.born < 1900)
-        .map(uzrast)));
+        .map(duzinaZivota)));
 
 console.log(
     prosek(pretci
         .filter(jeZensko)
         .filter(x => x.born >= 1800 && x.born < 1900)
-        .map(uzrast)));
+        .map(duzinaZivota)));
