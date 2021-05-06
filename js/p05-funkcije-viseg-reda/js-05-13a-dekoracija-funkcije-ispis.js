@@ -1,8 +1,8 @@
 /*
 Funkcija koja modifikuje funkciju
 */
-const bucna = function (f) {
-    return function (arg) {
+function bucna(f) {
+    return function(arg) {
         console.log(`poziv   '${f.name}' sa argumentom , ${arg}`);
         let val = f(arg);
         console.log(`pozvana '${f.name}' sa argumentom`, arg, " - rezultat ", val);

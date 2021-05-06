@@ -1,4 +1,4 @@
-prikaz = function (visina, tezina) {
+let prikaz = function(visina, tezina) {
     console.log(`tip: ${this.tip}, naziv: ${this.ime}, visina: ${visina}, tezina: ${tezina}`);
 };
 
@@ -18,7 +18,7 @@ let tarzan = {
     ime: 'Tarzan',
 };
 
-let dambo =  {
+let dambo = {
     tip: 'slon',
     ime: 'Dambo',
 };
