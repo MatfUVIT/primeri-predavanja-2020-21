@@ -1,0 +1,1 @@
+// poziva se funkcija confirm
