@@ -13,7 +13,7 @@ function prikaziNisku(niska) {
 function prikaziTriRedom() {
     prikaziNisku("А")
         .then(() => {
-            return prikaziNisku("Б")
+            return prikaziNisku("Б");
         })
         .then(() => prikaziNisku("В"));
     prikaziNisku("Г");

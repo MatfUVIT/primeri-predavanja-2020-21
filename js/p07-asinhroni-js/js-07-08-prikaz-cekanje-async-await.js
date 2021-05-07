@@ -11,9 +11,9 @@ function prikaziNisku(niska) {
 }
 
 async function prikaziDvaRedom() {
-    await prikaziNisku("А");
+    prikaziNisku("А");
     await prikaziNisku("Б");
-    prikaziNisku("В");
+    await prikaziNisku("В");
     prikaziNisku("Г");
     prikaziNisku("Д");
 }

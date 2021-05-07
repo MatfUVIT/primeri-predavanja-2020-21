@@ -5,20 +5,18 @@ function dodajNisku(prethodna, tekuca) {
                 razresi(prethodna + ' ' + tekuca);
             },
             Math.floor(Math.random() * 50) + 1
-        )
-    })
+        );
+    });
 }
 
 function dodajSveRedom() {
     dodajNisku('', 'A')
         .then(result => {
-            return dodajNisku(result, 'Б')
+            return dodajNisku(result, 'Б');
         })
+        .then(result => dodajNisku(result, 'В'))
         .then(result => {
-            return dodajNisku(result, 'В')
-        })
-        .then(result => {
-            console.log(result)
+            console.log(result);
         });
 }
 

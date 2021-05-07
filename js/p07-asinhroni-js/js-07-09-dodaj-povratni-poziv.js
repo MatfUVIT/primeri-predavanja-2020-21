@@ -9,9 +9,9 @@ function dodajNisku(prethodna, tekuca, povratniPoziv) {
 
 function dodajSveRedom() {
     dodajNisku('', 'A', result => {
-        dodajNisku(result, 'Б', result => {
-            dodajNisku(result, 'В', result => {
-                console.log(result);
+        dodajNisku(result, 'Б', result2 => {
+            dodajNisku(result2, 'В', result3 => {
+                console.log(result3);
             });
         });
     });
