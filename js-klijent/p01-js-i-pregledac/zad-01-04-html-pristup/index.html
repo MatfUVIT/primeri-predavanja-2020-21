@@ -6,13 +6,19 @@
     <meta charset="UTF-8" />
 </head>
 
-<body id="telo">
+<body>
     <!-- Atribut src elementa <script> se podešava na ime javascript datoteke koju treba izvršiti -->
     <script src="js-01-04-funkcija-pristup.js"></script>
 
-    <p id="pasus1">
-        Статичан садржај веб стране...
-    </p>
+    <form id="myForm" action="http://liss2.matf.bg.ac.rs/obradi-me.php" method="get">
+        Име:
+        <br />
+        <input type="text" name="ime" />
+        <br /> Презиме:
+        <br />
+        <input type="text" name="prezime" />
+        <input type="submit" />
+    </form>
 
 </body>
 
