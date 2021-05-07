@@ -3,13 +3,13 @@ let zecPrototip = {
 
     boja: "непознатa",
 
-    predstaviSe: function () {
+    predstaviSe: function() {
         console.log("Зец: " + this.tip + " боја: " + this.boja + "." + "'\n");
     },
 
-    govori: function (tekst) {
-        console.log("Овај зец " + this.tip + " боје " + this.boja
-            + " каже '" + tekst + "'" + "\n");
+    govori: function(tekst) {
+        console.log("Овај зец " + this.tip + " боје " + this.boja +
+            " каже '" + tekst + "'" + "\n");
     }
 };
 
@@ -24,11 +24,11 @@ let zecIzFikcijePrototip = Object.create(zecPrototip);
 zecIzFikcijePrototip.tip = "непознат";
 zecIzFikcijePrototip.boja = "непозната";
 
-zecIzFikcijePrototip.predstaviSe = function () {
-    console.log("Зец: " + this.tip + ", боја: " + this.boja + ", име: " + this.ime + "\n"
-        + "креатор: " + this.kreator.ime + " " + this.kreator.prezime + "\n"
-        + "дело: " + this.delo + "\n"
-        + "узречица: '" + this.uzrecica + "'\n");
+zecIzFikcijePrototip.predstaviSe = function() {
+    console.log("Зец: " + this.tip + ", боја: " + this.boja + ", име: " + this.ime + "\n" +
+        "креатор: " + this.kreator.ime + " " + this.kreator.prezime + "\n" +
+        "дело: " + this.delo + "\n" +
+        "узречица: '" + this.uzrecica + "'\n");
 }
 
 let duskoDugousko = Object.create(zecIzFikcijePrototip);
@@ -46,7 +46,7 @@ duskoDugousko.predstaviSe();
 let plaviZec = Object.create(zecIzFikcijePrototip);
 plaviZec.tip = "веома паметан";
 plaviZec.boja = "плава";
-plaviZec.ime =  "Плави ѕец";
+plaviZec.ime = "Плави зец";
 plaviZec.kreator = { "ime": "Душко", "prezime": "Радовић" };
 plaviZec.delo = "Плави зец";
 plaviZec.uzrecica = "Плави, зец, чудни зец, једини на свету.";

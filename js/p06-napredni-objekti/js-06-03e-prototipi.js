@@ -2,9 +2,9 @@ let prototipTacke = {
     x: 0,
     y: 0,
 
-    prikazi: function () { console.log(`(${this.x},${this.y})`); },
+    prikazi: function() { console.log(`(${this.x},${this.y})`); },
 
-    translacija: function (xV, yV) {
+    translacija: function(xV, yV) {
         this.x += xV;
         this.y += yV;
     }
@@ -19,13 +19,16 @@ tackaA.prikazi();
 tackaA.translacija(-3, -4);
 tackaA.prikazi();
 
-Object.getPrototypeOf(tackaA).centralnaSimetrija = function (xC, yC) {
+Object.getPrototypeOf(tackaA).centralnaSimetrija = function(xC, yC) {
     this.translacija(2 * (xC - this.x), 2 * (yC - this.y));
-}
+};
 
-console.log("===")
+console.log("===");
+tackaA.centralnaSimetrija(2, 2);
+tackaA.prikazi();
+
+console.log("===");
 let tackaB = Object.create(prototipTacke);
 tackaB.prikazi();
 tackaB.centralnaSimetrija(tackaA.x, tackaA.y);
 tackaB.prikazi();
-

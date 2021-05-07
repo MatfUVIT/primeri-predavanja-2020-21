@@ -11,7 +11,7 @@
             this.innerHTML = '<h2>Ovo je student!</h2>';
         };
         // new element
-        let StudentComponent = document.registerElement('uvit-student', {
+        let StudentComponent = customElements.define('uvit-student', {
             prototype: StudentComponentProto
         });
     </script>
@@ -27,9 +27,7 @@
     <p>
         Статичан садржај веб стране...
     </p>
-    <p>
-        <uvit-student></uvit-student>
-    </p>
+    <uvit-student></uvit-student>
 
 </body>
 

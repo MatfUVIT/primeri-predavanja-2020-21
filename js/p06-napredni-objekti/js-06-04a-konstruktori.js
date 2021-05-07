@@ -1,10 +1,10 @@
 function Zec(tip = "непознат") {
     this.tip = tip;
 
-    this.govori = function (tekst) {
+    this.govori = function(tekst) {
         console.log("Овај зец " + this.tip + " каже '" +
             tekst + "'");
-    }
+    };
 }
 
 let zec = new Zec();
