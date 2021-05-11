@@ -1,11 +1,20 @@
-let StudentComponentProto = Object.create(HTMLElement.prototype);
+class Student extends HTMLElement {
+    constructor() {
+        super(); // always call super() first in the constructor.
+        const templateContent = document
+            .getElementById('uvit-student-template')
+            .content;
+        // Attach a shadow root to <uvit-student>.
+        const shadowRoot = this.attachShadow({ mode: 'open' })
+            .appendChild(templateContent.cloneNode(true));
+    }
 
-StudentComponentProto.createdCallback = function() {
-    let shadow = this.createShadowRoot();
-    shadow.innerHTML = '<h2>Ја сам студент!</h2>';
-};
+    connectedCallback() {}
+
+    disconnectedCallback() {}
+
+    attributeChangedCallback(attrName, oldVal, newVal) {}
+}
 
 // new element
-let StudentComponent = document.registerElement('uvit-student', {
-    prototype: StudentComponentProto
-});
+let StudentComponent = customElements.define('uvit-student', Student);

@@ -5,7 +5,7 @@ class Student extends HTMLElement {
     connectedCallback() {
         this.innerHTML =
             `<h2>
-                Ovo je student!
+                Ovo je student (connected Callback)!
             </h2>`;
     }
     disconnectedCallback() {}
