@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <title>Nove HTML komponente</title>
+    <meta charset="UTF-8" />
+    <script src='fioka-component.js'></script>
+</head>
+
+<body>
+    <h1>Илустрација нових <code>HTML</code> компоненти</h1>
+    <p>
+        Статичан садржај веб стране...
+    </p>
+    <template id="uvit-fioka-template">
+        <style>
+            h2 {
+                color: white;
+                background-color: #999;
+                padding: 5px;
+            }
+        </style>
+        <h2>
+            Fioka (template)!
+        </h2>
+    </template>
+
+    <uvit-fioka otvoreno></uvit-fioka>
+    <uvit-fioka></uvit-fioka>
+    <!-- <uvit-fioka otvoreno disabled></uvit-fioka> -->
+
+</body>
+
+</html>
