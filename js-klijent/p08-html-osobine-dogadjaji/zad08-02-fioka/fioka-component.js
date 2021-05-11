@@ -31,7 +31,7 @@ class Fioka extends HTMLElement {
     set otvoreno(val) {
         // Reflect the value of the open property as an HTML attribute.
         if (val) {
-            this.setAttribute('otvoreno', '');
+            this.setAttribute('otvoreno', 'XXX');
         } else {
             this.removeAttribute('otvoreno');
         }

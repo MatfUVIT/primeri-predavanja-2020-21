@@ -18,17 +18,12 @@ class Fioka extends HTMLElement {
         });
     }
 
-    connectedCallback() {}
-
-    disconnectedCallback() {}
-
-    attributeChangedCallback(attrName, oldVal, newVal) {}
-
-    // A getter/setter for an open property.
+    // читање особине otvoreno
     get otvoreno() {
         return this.hasAttribute('otvoreno');
     }
 
+    // постављање особине otvoreno
     set otvoreno(val) {
         // Reflect the value of the open property as an HTML attribute.
         if (val) {
@@ -38,11 +33,12 @@ class Fioka extends HTMLElement {
         }
     }
 
-    // A getter/setter for a disabled property.
+    // читање особине disabled
     get disabled() {
         return this.hasAttribute('disabled');
     }
 
+    // постављање особине disabled
     set disabled(val) {
         // Reflect the value of the disabled property as an HTML attribute.
         if (val) {
@@ -52,10 +48,19 @@ class Fioka extends HTMLElement {
         }
     }
 
+    // операција
     pomeriFioku() {
         this.otvoreno = !this.otvoreno;
         console.log(`Fioka je pomerena. Status fioke: ${this.hasAttribute('otvoreno')?'otovoreno':'zatvoreno'}`);
     }
+
+    connectedCallback() {}
+
+    disconnectedCallback() {}
+
+    attributeChangedCallback(attrName, oldVal, newVal) {}
+
+
 }
 
 // нови елеменат
