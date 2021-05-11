@@ -1,9 +1,10 @@
 class Student extends HTMLElement {
     constructor() {
-        super(); // always call super() first in the constructor.
-        // Attach a shadow root to <uvit-student>.
-        const shadowRoot = this.attachShadow({ mode: 'open' });
-        shadowRoot.innerHTML =
+        // увек у конструктору на почетку позвати super()
+        super();
+        // придруживање ДОМ сенке уз корен 
+        const senkaKoren = this.attachShadow({ mode: 'open' });
+        senkaKoren.innerHTML =
             `<h2>
                 Ovo je student (SwadowDOM)!
             </h2>`;

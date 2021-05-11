@@ -1,12 +1,14 @@
 class Student extends HTMLElement {
     constructor() {
-        super(); // always call super() first in the constructor.
-        const templateContent = document
+        // увек у конструктору на почетку позвати super()
+        super();
+        // постављање шаблона
+        const sablon = document
             .getElementById('uvit-student-template')
             .content;
-        // Attach a shadow root to <uvit-student>.
-        const shadowRoot = this.attachShadow({ mode: 'open' })
-            .appendChild(templateContent.cloneNode(true));
+        // придруживање ДОМ сенке уз корен 
+        const senkaKoren = this.attachShadow({ mode: 'open' })
+            .appendChild(sablon.cloneNode(true));
     }
 
     connectedCallback() {}
@@ -16,5 +18,5 @@ class Student extends HTMLElement {
     attributeChangedCallback(attrName, oldVal, newVal) {}
 }
 
-// new element
+// нови елеменат
 let StudentComponent = customElements.define('uvit-student', Student);

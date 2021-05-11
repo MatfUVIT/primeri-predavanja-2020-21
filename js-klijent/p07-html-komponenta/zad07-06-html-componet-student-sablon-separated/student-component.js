@@ -12,10 +12,12 @@ sablon.innerHtml =
     </h2>`;
 
 class Student extends HTMLElement {
+
     constructor() {
-        super(); // always call super() first in the constructor.
-        // Attach a shadow root to <uvit-student>.
-        const shadowRoot = this.attachShadow({ mode: 'open' })
+        // увек у конструктору на почетку позвати super()
+        super();
+        // придруживање ДОМ сенке уз корен 
+        const senkaKoren = this.attachShadow({ mode: 'open' })
             .appendChild(sablon.cloneNode(true));
     }
 
@@ -26,5 +28,5 @@ class Student extends HTMLElement {
     attributeChangedCallback(attrName, oldVal, newVal) {}
 }
 
-// new element
+// нови елеменат
 let StudentComponent = customElements.define('uvit-student', Student);
