@@ -5,15 +5,18 @@
     <title>Nove HTML komponente</title>
     <meta charset="UTF-8" />
     <script>
-        let StudentComponentProto = Object.create(HTMLElement.prototype);
-        // and add some template using a lifecycle
-        StudentComponentProto.createdCallback = function() {
-            this.innerHTML = '<h2>Ovo je student!</h2>';
-        };
+        class Student extends HTMLElement {
+            constructor() {
+                super(); // always call super() first in the constructor.
+            }
+            connectedCallback() {
+                this.innerHTML = '<h2>Ovo je student!</h2>';
+            }
+            disconnectedCallback() {}
+            attributeChangedCallback(attrName, oldVal, newVal) {}
+        }
         // new element
-        let StudentComponent = customElements.define('uvit-student', {
-            prototype: StudentComponentProto
-        });
+        let StudentComponent = customElements.define('uvit-student', Student);
     </script>
 </head>
 

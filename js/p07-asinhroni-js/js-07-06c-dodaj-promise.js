@@ -13,7 +13,7 @@ function dodajSveRedom() {
     dodajNisku('', 'A')
         .then(result => dodajNisku(result, 'Б'))
         .then(result => dodajNisku(result, 'В'))
-        .then(result => console.log(result) );
+        .then(result => console.log(result));
 }
 
 dodajSveRedom();
