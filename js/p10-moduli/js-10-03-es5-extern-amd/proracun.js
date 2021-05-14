@@ -1,5 +1,4 @@
-
-define(['./vrednost'], function (vrednost) {
+define(['./vrednost'], function(vrednost) {
     function izracunajKvadrat() {
         // pozvan je metod iz vrednost.js
         let x = vrednost.getPodatak();
@@ -9,6 +8,6 @@ define(['./vrednost'], function (vrednost) {
 
     // publikovanje "javne" funkcije
     return {
-        izracunajKvadratAMD: izracunajKvadrat
+        proracunajAMD: izracunajKvadrat
     };
 });

@@ -7,4 +7,4 @@ function izracunajKvadrat() {
     return x * x;
 }
 
-exports.izracunajKvadratCommonJS = izracunajKvadrat;
+exports.proracunajCommonJS = izracunajKvadrat;

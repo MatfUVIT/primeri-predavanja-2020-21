@@ -1,4 +1,4 @@
-import { getPodatak } from "./vrednost";
+import { getPodatak } from "./vrednost.mjs";
 
 function izracunajKvadrat() {
     // pozvan je metod iz vrednost.js

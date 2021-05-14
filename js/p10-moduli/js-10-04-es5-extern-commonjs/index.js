@@ -1,6 +1,6 @@
 const vrednost = require("./vrednost");
 const proracun = require("./proracun");
- 
-const argument = 10;
+
+const argument = 16;
 vrednost.setPodatak(argument);
-console.log(proracun.izracunajKvadratCommonJS());
+console.log(proracun.proracunajCommonJS());
