@@ -1,26 +1,26 @@
 "use strict";
 
 function AssertionFailed(message) {
-  this.message = message;
+    this.message = message;
 }
 AssertionFailed.prototype = Object.create(Error.prototype);
 
 function assert(test, message) {
-  if (!test)
-    throw new AssertionFailed(message);
+    if (!test)
+        throw new AssertionFailed(message);
 }
 
 function lastElement(array) {
-  assert(array.length > 0, "niz ne sme biti prazan");
-  return array[array.length - 1];
+    assert(array.length > 0, "niz ne sme biti prazan");
+    return array[array.length - 1];
 }
 
 function element(array, index) {
-  assert(array.length > 0, "niz ne sme biti prazan");
-  assert( typeof(index) == Number, "indeks niza mora biti broj" )
-  assert(index >= 0, "indeks niza ne sme biti negativan");
-  assert(index < array.length, "indeks niza mora biti manji od broja clanova");
-  return array[index];
+    assert(array.length > 0, "niz ne sme biti prazan");
+    assert(typeof(index) == Number, "indeks niza mora biti broj")
+    assert(index >= 0, "indeks niza ne sme biti negativan");
+    assert(index < array.length, "indeks niza mora biti manji od broja clanova");
+    return array[index];
 }
 
 let niz1 = [];

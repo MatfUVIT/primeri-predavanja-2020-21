@@ -1,16 +1,16 @@
 "use strict";
 
-let kontekst = null;
+let kontekst = "Cuvaj me!!!";
 console.log(kontekst);
 
 function izvrsiSaKontekstom(noviKontekst, teloFunkcije) {
-  let stariKontekst = kontekst;
-  kontekst = noviKontekst;
-  try {
-    return teloFunkcije();
-  } finally {
-    kontekst = stariKontekst;
-  }
+    let stariKontekst = kontekst;
+    kontekst = noviKontekst;
+    try {
+        return teloFunkcije();
+    } finally {
+        kontekst = stariKontekst;
+    }
 }
 
 console.log("---")
@@ -22,26 +22,24 @@ console.log(kontekst);
 
 console.log("---")
 try {
-  izvrsiSaKontekstom(16, function (x) {
-    if (kontekst < 0)
-      throw new Error("Nemoguce izracunati koren negativnog broja!");
-    console.log(Math.sqrt(kontekst));
-  });
+    izvrsiSaKontekstom(16, function(x) {
+        if (kontekst < 0)
+            throw new Error("Nemoguce izracunati koren negativnog broja!");
+        console.log(Math.sqrt(kontekst));
+    });
 } catch (e) {
-  console.log("Ignorise se izuzetak: " + e);
+    console.log("Ignorise se izuzetak: " + e);
 }
 console.log(kontekst);
 
 console.log("---")
 try {
-  izvrsiSaKontekstom(-16, function () {
-    if (kontekst < 0)
-      throw new Error("Nemoguce izracunati koren negativnog broja!");
-    console.log(Math.sqrt(kontekst));
-  });
+    izvrsiSaKontekstom(-16, function() {
+        if (kontekst < 0)
+            throw new Error("Nemoguce izracunati koren negativnog broja!");
+        console.log(Math.sqrt(kontekst));
+    });
 } catch (e) {
-  console.log("Ignorise se izuzetak: " + e);
+    console.log("Ignorise se izuzetak: " + e);
 }
 console.log(kontekst);
-
-
