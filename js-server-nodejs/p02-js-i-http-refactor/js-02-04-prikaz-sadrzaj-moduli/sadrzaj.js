@@ -4,6 +4,6 @@ let contentMap = {
     '/opis': '<h1> Opis sajta </h1>',
     '/korisnici': '<h1> Spisak korisnika veb sajta </h1>',
     '/privatno': '<h1> Privatni podaci </h1>'
-  }
+};
 
-  exports.sadrzaj = contentMap;
+exports.sadrzaj = contentMap;

@@ -8,7 +8,7 @@ http.createServer(onRequest).listen(port);
 console.log(`Veb server osluskuje zahteve na portu ${port}...\n`);
 
 function onRequest(request, response) {
-  let pathName = url.parse(request.url).pathname;
-  console.log(pathName);
-  prikaz.prikazStrane(response, pathName);
+    let pathName = url.parse(request.url).pathname;
+    console.log(pathName);
+    prikaz.prikazStrane(response, pathName);
 }

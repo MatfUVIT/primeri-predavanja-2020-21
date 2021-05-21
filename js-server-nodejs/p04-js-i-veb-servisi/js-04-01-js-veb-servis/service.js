@@ -1,10 +1,10 @@
 const url = require('url');
 
-exports.sampleRequest = function (req, res) {
+exports.sampleRequest = function(req, res) {
     const reqUrl = url.parse(req.url, true);
     var name = 'World';
     if (reqUrl.query.name) {
-        name = reqUrl.query.name
+        name = reqUrl.query.name;
     }
 
     var response = {
@@ -16,14 +16,14 @@ exports.sampleRequest = function (req, res) {
     res.end(JSON.stringify(response));
 };
 
-exports.testRequest = function (req, res) {
+exports.testRequest = function(req, res) {
     body = '';
 
-    req.on('data', function (chunk) {
+    req.on('data', function(chunk) {
         body += chunk;
     });
 
-    req.on('end', function () {
+    req.on('end', function() {
 
         postBody = JSON.parse(body);
 
@@ -37,7 +37,7 @@ exports.testRequest = function (req, res) {
     });
 };
 
-exports.invalidRequest = function (req, res) {
+exports.invalidRequest = function(req, res) {
     res.statusCode = 404;
     res.setHeader('Content-Type', 'text/plain');
     res.end('Invalid Request');
