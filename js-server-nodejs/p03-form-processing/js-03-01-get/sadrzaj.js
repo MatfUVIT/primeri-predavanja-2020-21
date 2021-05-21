@@ -1,7 +1,8 @@
 const mapaSadrzaja = {
     '/': 'dobro-dosli-start.html',
     '/dobro-dosli-start.html': 'dobro-dosli-start.html',
-    '/pozdrav': 'pozdrav'
-}
+    '/pozdrav': 'pozdrav',
+    '/slika': 'ljubicasta.jpg'
+};
 
 exports.contentMap = mapaSadrzaja;

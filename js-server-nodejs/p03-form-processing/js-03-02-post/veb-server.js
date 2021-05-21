@@ -14,15 +14,16 @@ function onRequest(request, response) {
     if (request.method == 'GET') {
         let queryText = url.parse(request.url).query;
         let queryData = querystring.parse(queryText);
-        console.log("GET:");
-        console.log(queryData);
+        console.log("GET:" );
+        console.log(queryData );
         prikaz.prikazStrane(response, pathName, queryData);
-    } else if (request.method == 'POST') {
+    }
+    else if (request.method == 'POST') {
         let body = '';
-        request.on('data', function(data) {
+        request.on('data', function (data) {
             body += data;
         });
-        request.on('end', function() {
+        request.on('end', function () {
             let postData = querystring.parse(body);
             console.log("POST:");
             console.log(postData);
@@ -30,3 +31,4 @@ function onRequest(request, response) {
         });
     }
 }
+

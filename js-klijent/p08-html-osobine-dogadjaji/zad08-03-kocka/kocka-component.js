@@ -50,6 +50,7 @@ function updateStyle(elem) {
 const add = document.querySelector('.add');
 const update = document.querySelector('.update');
 const remove = document.querySelector('.remove');
+
 let kockica;
 
 update.disabled = true;

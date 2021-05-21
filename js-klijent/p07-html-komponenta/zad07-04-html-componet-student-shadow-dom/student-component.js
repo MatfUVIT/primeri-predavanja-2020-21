@@ -6,7 +6,7 @@ class Student extends HTMLElement {
         const senkaKoren = this.attachShadow({ mode: 'open' });
         senkaKoren.innerHTML =
             `<h2>
-                Ovo je student (SwadowDOM)!
+                Ovo je student (ShadowDOM)!
             </h2>`;
     }
 
